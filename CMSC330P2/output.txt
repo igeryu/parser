@@ -1,0 +1,89 @@
+Expression: (4+3)
+Value = 7
+
+Expression: (4-3)
+Value = 1
+
+Expression: (4/2)
+Value = 2
+
+Expression: (8*9)
+Value = 72
+
+Expression: (8<9)
+Value = 1
+
+Expression: (8>9)
+Value = 0
+
+Expression: (9>8)
+Value = 1
+
+Expression: (9<8)
+Value = 0
+
+Expression: (1&1)
+Value = 1
+
+Expression: (0&1)
+Value = 0
+
+Expression: (7|1)
+Value = 1
+
+Expression: (0|4)
+Value = 1
+
+Expression: (0|0)
+Value = 0
+
+Expression: (0!)
+Value = 1
+
+Expression: (6!)
+Value = 0
+
+Expression: ((3*(3+4))+5)
+Value = 26
+
+Expression: (((1=(0|1))*9)+5)
+Value = 14
+
+Expression: ((3!)!)
+Value = 0
+
+Expression: ((1=0)!)
+Value = 0
+
+Expression: (x+(y*3)),x=2,y=6
+Value = 20
+
+Expression: (x+(y+(z*3))),x=4,y=6,z=7
+Value = 29
+
+Expression: (x/y),x=7,y=3
+Value = 0
+
+Expression: ((x/y)/z),x=21,y=3,z=2
+Value = 0
+
+Expression: (x!),x=0
+Value = 0
+
+Expression: (x&(y|z)),x=1,y=0,z=0
+Value = 1
+
+Expression: (x<y),x=7,y=4
+Value = 1
+
+Expression: ((x>y)&(z=y)),x=2,y=1,z=1
+Value = 0
+
+Expression: (((x>y)&(z=y))!),x=2,y=1,z=1
+Value = 0
+
+Expression: (x&y),x=1,y=2
+Value = 1
+
+
+ End of file.

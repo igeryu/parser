@@ -1,0 +1,29 @@
+﻿
+Current:
+<program> → <exp> , <assigns> ;
+
+New:
+<program> → <exp> ; | <exp> ',' <assigns> ';'
+
+<exp> -> '(' <operand> <op> <operand> ')' | '(' <operand> '!' ')'
+
+<operand> → <literal> | <variable> | <exp> 
+
+<op> -> '+' | '-' | '*' | '/' | '>' | '<' | '=' | '&' | '|'
+
+<assigns> → <assigns> , <assign> | <assign>
+
+<assign> → <variable> = <literal>
+
+
+REGULAR EXPRESSIONS:
+
+<op>           [+-*/]
+
+<variable>        [a-zA-Z][a-zA-Z0-9]*
+
+<literal> [0-9]+
+
+SCRATCHPAD:
+
+(x + (y = 2)), x = 0, y = 1;
